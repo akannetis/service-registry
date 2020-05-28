@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: ServiceRegistry
+  security:
+    basic: 
+      enabled: true
+    user:
+      name: andreas
+      password: kannetis
+
+server:
+  port: 8761
+
+eureka:
+  client: 
+    register-with-eureka: false
+    fetch-registry: false
+  datacenter: Andreas Machine
+  environment: Development
+      
+        
+#    service-url:
+#      defaultZone: http://andreas:kannetis@localhost:8761/eureka
+          
+logging:
+  level: 
+    com:
+      netflix:
+        eureka: OFF
+        discovery: OFF
